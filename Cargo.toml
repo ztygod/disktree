@@ -2,5 +2,18 @@
 name = "disktree"
 version = "0.1.0"
 edition = "2021"
+authors = ["TinYi Zhou"]
+description = "A high-performance, interactive command-line disk space visualization tool."
+license = "MIT"
+repository = "https://github.com/ztygod/disktree"
 
 [dependencies]
+clap = { version = "4", features = ["derive"] }
+walkdir = "2"
+tokio = { version = "1", features = ["full"] }
+tui = { version = "0.19", features = ["crossterm"] }
+crossterm = "0.27"
+byte-unit = "4"
+anyhow = "1"
+thiserror = "1"
+colored = "2"
